@@ -1,4 +1,3 @@
-import { act } from "@testing-library/react";
 import { types } from "../types/types";
 
 export const authReducer = (state = {}, action) => {
