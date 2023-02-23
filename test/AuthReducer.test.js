@@ -1,11 +1,11 @@
 import { authReducer } from "../src/auth";
 import { types } from "../src/auth/types/types";
 describe("Prueba en el AuthReducer", () => {
-  const estado = { loggued: false };
+  const estado = { logged: false };
 
   test("debe retornar el estado por defecto", () => {
-    const state = authReducer({ loggued: false }, {});
-    expect(state).toEqual({ loggued: false }, {});
+    const state = authReducer({ logged: false }, {});
+    expect(state).toEqual({ logged: false }, {});
   });
 
   test("dehe de login llamar el login auteuticar y estabecer el user", () => {
@@ -14,7 +14,7 @@ describe("Prueba en el AuthReducer", () => {
     const state = authReducer(estado, action);
 
     expect(state).toEqual({
-      loggued: true,
+      logged: true,
       user: action.payload,
     });
   });
@@ -23,6 +23,6 @@ describe("Prueba en el AuthReducer", () => {
     const action = { type: types.logout };
 
     const state = authReducer(estado, action);
-    expect(state).toEqual({ loggued: false });
+    expect(state).toEqual({ logged: false });
   });
 });
