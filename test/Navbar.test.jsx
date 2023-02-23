@@ -28,7 +28,7 @@ describe("Prueba en el navbar", () => {
     expect(screen.getByText("nicolas")).toBeTruthy();
   });
 
-  test("debe de llamar el logout y navigate cuando se hace el click en el boton ", () => {
+  test("debe de llamar el logout y navigate cuando se hace el click en el boton", () => {
     render(
       <AuthContext.Provider value={contextValue}>
         <MemoryRouter>

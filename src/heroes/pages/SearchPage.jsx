@@ -19,6 +19,7 @@ export const SearchPage = () => {
     e.preventDefault();
 
     navigate(`?q=${searchText}`);
+    console.log("desde testing");
   };
 
   return (
@@ -62,6 +63,7 @@ export const SearchPage = () => {
             search a hero
           </div>
           <div
+            aria-label="alert-hero"
             className="alert alert-danger animate__animated animate__flipInX"
             style={{ display: showError ? "" : "none" }}
           >
