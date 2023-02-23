@@ -20,7 +20,7 @@ describe("prueba en el public route", () => {
     expect(screen.getByText("Rutas publicas")).toBeTruthy();
   });
 
-  test("debe de navegar si esta autenticado ", () => {
+  test("debe de navegar si esta autenticado", () => {
     const contextValue = {
       logged: true,
       user: { id: 123, name: "nicolas" },
