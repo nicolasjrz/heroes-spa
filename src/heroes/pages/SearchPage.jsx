@@ -19,7 +19,6 @@ export const SearchPage = () => {
     e.preventDefault();
 
     navigate(`?q=${searchText}`);
-    console.log("desde testing");
   };
 
   return (
